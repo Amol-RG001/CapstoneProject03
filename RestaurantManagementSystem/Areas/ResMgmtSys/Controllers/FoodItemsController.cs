@@ -31,7 +31,7 @@ namespace RestaurantManagementSystem.Areas.ResMgmtSys.Controllers
         {
             var viewmodel = await _context.FoodItems
                                           .Where(b => b.FoodCategoryId == filterFoodCategoryId)
-                                          .Include(b => b.FoodCategory)
+                                          .Include(b => b.FoodCategory) //include different controller
                                           .ToListAsync();
 
             return View(viewName: "IndexCustomized", model: viewmodel);
