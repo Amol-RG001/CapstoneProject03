@@ -1,0 +1,114 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center" style="background-color:#E7D2CC">
+    <div class="text-center" style="background-color:#EEEDE7"></div>
+
+    <h3 class="display-5" style="font-size:70px">Welcome to Restaurant Green  <img src="~/img/leaf.png" /></h3>
+    <br />
+
+    <div class="container">
+        <div class="col d-flex justify-content-center">
+            <div class="card " style="width:400px">
+                <img class="card-img-top" src="~/img/menu.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Menu</h4>
+                    <p class="card-text">Enjoyed the food.</p>
+                    <a class="btn btn-sm btn-success" asp-area="ResMgmtSys" asp-controller="Orders" asp-action="Create">Order Food</a>
+                    <a class="btn btn-sm btn-primary" asp-area="ResMgmtSys" asp-controller="ShowFoodItems" asp-action="Index">View Menu</a>
+                    <a class="btn btn-sm btn-warning" asp-area="ResMgmtSys" asp-controller="Customers" asp-action="Create">New User Register</a>
+                </div>
+
+            </div>
+        </div>
+        <br />
+        <hr />
+        <h3>Popular Menu Item </h3>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner" style="width:50px 50px">
+                <div class="carousel-item active">
+                    <img src="~/img/slide1.jpg" alt="slide 1" width="650px" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/slide2.jpg" alt="slide 2" width="650px" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/slide3.jpg" alt="slide 3 " width="650px" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/slide4.jpg" alt="slide 4 " width="650px" height="350px">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+    </div>
+    <br />
+    <br />
+
+</div>
+<br />
+
+<div class="lightbox">
+    <h2>Exterior - Restro Green</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="~/img/extr1.jpg"
+                 alt="Outro-1"
+                 class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+            <img src="~/img/extr4.jpg"
+                 alt="Outro-2"
+                 class="w-100 shadow-1-strong rounded" />
+        </div>
+        <div class="col-lg-6">
+            <img src="~/img/extr7.jpg"
+                 alt="Outro-3"
+                 class="w-100 shadow-1-strong rounded" />
+        </div>
+    </div>
+</div>
+<p><br /><strong>Tourists around the world can enjoy dining services on railway cars and cruise ships dining rooms, which are essentially travelling restaurants. Many railways dining services cater to the needs of travellers by providing railway refreshment rooms at railway stations. Many cruise ships provide a variety of dining experiences including a main restaurant, satellites restaurants, room service, speciality restaurants, cafes, bars, and buffets to name a few.</strong></p>
+<br />
+<div class="lightbox">
+    <h2>Interior - Restro Green</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="~/img/in1.jpg"
+                 alt="Intro-1"
+                 class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+            <img src="~/img/in2.jpg"
+                 alt="Intro-2"
+                 class="w-100 shadow-1-strong rounded" />
+        </div>
+        <div class="col-lg-6">
+            <img src="~/img/in3.jpg"
+                 alt="Intro-3"
+                 class="w-100 shadow-1-strong rounded" />
+        </div>
+    </div>
+    <p><br /><strong>Typically, at mid- to high-priced restaurants, customers sit at tables, their orders are taken by a waiter, who brings the food when it is ready. After eating, the customers then pay the bill. In some restaurants, such as workplace cafeterias, there are no waiters; the customers use trays, on which they place cold items that they select from a refrigerated container and hot items which they request from cooks, and then they pay a cashier before they sit down. Another restaurant approach which uses few waiters is the buffet restaurant. Customers serve food onto their own plates and then pay at the end of the meal.</strong></p>
+
+</div>
+
+<br />
